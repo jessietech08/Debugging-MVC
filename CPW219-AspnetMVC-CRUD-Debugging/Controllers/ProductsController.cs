@@ -18,6 +18,7 @@ namespace CPW219_AspnetMVC_CRUD_Debugging.Controllers
             return View(await _context.Product.ToListAsync());
         }
 
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
